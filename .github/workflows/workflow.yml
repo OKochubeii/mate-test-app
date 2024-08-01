@@ -29,7 +29,7 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-    - run: echo "${{ env.APP_ENV }} - ${{ env.CONFIG_TYPE }} - ${{ env.PYTHON_VERSION }}
+    - run: echo "${{ env.APP_ENV }} - ${{ env.CONFIG_TYPE }} - ${{ env.PYTHON_VERSION }}"
     - run: echo "Job was triggered by event ${{ github.event_name }}"
     - run: echo "This job is executed on a runner with an os ${{ runner.os }}"
     - run: echo "Name of the branch ${{ github.ref }} and your repo ${{ github.repository}}"
